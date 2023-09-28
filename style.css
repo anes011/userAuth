@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap');
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.authentication-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 1000px;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+}
+
+.left-auth {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 3rem;
+    transition: all 1s ease;
+}
+
+.left-auth-active {
+    transform: translateX(100%);
+    transition: all 1s ease;
+}
+
+.left-auth h1 {
+    margin-top: 5rem;
+    font-size: 2.5rem;
+}
+
+.third-party-sign {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 15px;
+}
+
+.third-party-sign button {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.alternative-sign {
+    margin-top: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: rgb(91, 91, 91);
+}
+
+.inputs-container {
+    display: flex;
+    width: 100%;
+}
+
+.email-password-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.email-password-container input, .name-input {
+    height: 45px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: lightgray;
+    text-indent: 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.name-input {
+    margin-bottom: 1rem;
+}
+
+.forgot-password {
+    margin-top: 2rem;
+    font-weight: 500;
+    color: rgb(91, 91, 91);
+    cursor: pointer;
+}
+
+.white-sign-btn {
+    margin-top: 2rem;
+    height: 45px;
+    width: 180px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(69, 0, 173);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.right-auth {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(88, 16, 197);
+    border-radius: 150px 0 0 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    gap: 4rem;
+    transition: all 1s ease;
+}
+
+.right-auth-active {
+    transform: translateX(-100%);
+    border-radius: 0 150px 150px 0;
+    transition: all 1s ease;
+}
+
+.right-sign-up-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    color: #fff;
+    margin-left: 32rem;
+    transition: all 1s ease;
+}
+
+.right-sign-in-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    color: #fff;
+    transition: all 1s ease;
+}
+
+.right-auth h1 {
+    font-size: 3rem;
+}
+
+.right-auth p {
+    width: 430px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.sign-up-btn, .sign-in-btn {
+    height: 45px;
+    width: 180px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
