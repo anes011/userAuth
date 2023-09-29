@@ -21,7 +21,7 @@
     background-color: #fff;
 }
 
-.left-auth {
+.white-auth {
     width: 50%;
     height: 100%;
     display: flex;
@@ -31,12 +31,12 @@
     transition: all 1s ease;
 }
 
-.left-auth-active {
+.white-auth-active {
     transform: translateX(100%);
     transition: all 1s ease;
 }
 
-.left-auth h1 {
+.white-auth h1 {
     margin-top: 5rem;
     font-size: 2.5rem;
 }
@@ -100,7 +100,7 @@
     cursor: pointer;
 }
 
-.white-sign-btn {
+.white-sign-btn, .white-sign-btn-new {
     margin-top: 2rem;
     height: 45px;
     width: 180px;
@@ -111,9 +111,37 @@
     font-weight: 600;
     font-size: 1rem;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.right-auth {
+.loading {
+    height: 25px;
+    width: 25px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: relative;
+    animation: spin infinite .7s linear;
+}
+
+.overlay {
+    height: 10px;
+    width: 10px;
+    background-color: rgb(69, 0, 173);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -6px;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.purple-auth {
     width: 50%;
     height: 100%;
     background-color: rgb(88, 16, 197);
@@ -126,13 +154,13 @@
     transition: all 1s ease;
 }
 
-.right-auth-active {
+.purple-auth-active {
     transform: translateX(-100%);
     border-radius: 0 150px 150px 0;
     transition: all 1s ease;
 }
 
-.right-sign-up-container {
+.purple-sign-up-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,7 +171,7 @@
     transition: all 1s ease;
 }
 
-.right-sign-in-container {
+.purple-sign-in-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,17 +181,17 @@
     transition: all 1s ease;
 }
 
-.right-auth h1 {
+.purple-auth h1 {
     font-size: 3rem;
 }
 
-.right-auth p {
+.purple-auth p {
     width: 430px;
     text-align: center;
     font-size: 1.2rem;
 }
 
-.sign-up-btn, .sign-in-btn {
+.purple-sign-up-btn, .purple-sign-in-btn {
     height: 45px;
     width: 180px;
     border-radius: 10px;
@@ -173,4 +201,107 @@
     font-weight: 600;
     font-size: 1rem;
     cursor: pointer;
+}
+
+.log-error {
+    background-color: rgb(255, 109, 109);
+    padding: 5px 10px;
+    border-radius: 20px;
+    position: absolute;
+    top: 330px;
+    display: none;
+    transition: all .3s ease;
+}
+
+.rocket {
+    height: 150px;
+}
+
+.greeting-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.greeting-container img {
+    height: 50px;
+}
+
+.greet-desc {
+    width: 550px;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 40px;
+}
+
+.get-started-btn {
+    margin-top: 2rem;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(90, 35, 255);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+
+.squiggly-1 {
+    position: absolute;
+    top: 70px;
+    left: 150px;
+    transform: scale(2.5);
+    animation: bounce-1 infinite 7s .5s linear;
+}
+
+.squiggly-2 {
+    position: absolute;
+    top: 100px;
+    right: 150px;
+    transform: scale(2.5);
+    animation: bounce-2 infinite 7s linear;
+}
+
+.squiggly-3 {
+    position: absolute;
+    bottom: 100px;
+    left: 150px;
+    transform: scale(2.5);
+    animation: bounce-3 infinite 7s linear;
+}
+
+@keyframes bounce-1 {
+    50% {
+        top: 140px;
+    }
+    100% {
+        top: 70px;
+    }
+}
+
+@keyframes bounce-2 {
+    50% {
+        top: 150px;
+    }
+    100% {
+        top: 100px;
+    }
+}
+
+@keyframes bounce-3 {
+    50% {
+        bottom: 150px;
+    }
+    100% {
+        bottom: 100px;
+    }
+}
+
+.greet-avatar {
+    position: absolute;
+    top: 0;
+    left: -245px;
 }
